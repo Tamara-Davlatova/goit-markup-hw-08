@@ -1,0 +1,27 @@
+.logo {
+  @extend %link;
+  font-family: raleway, sans-serif;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  transition: color 250ms $transition-timing-function;
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+.logo-text {
+  color: $accent-color;
+}

@@ -1,0 +1,49 @@
+.footer-page {
+  background-color: #2f303a;
+  @extend %section;
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.footer {
+  @extend %container;
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+.tablet-footer {
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+    // margin-bottom: 60px;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
